@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template HTML + CSS + JS BY Elzero</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,400;1,700&family=Cairo:wght@200;600;800&family=Mochiy+Pop+P+One&family=Montserrat&family=Open+Sans:wght@300;400;600;800&family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&family=Roboto:wght@100&family=Rubik+Wet+Paint&family=Send+Flowers&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d575fe1d69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Start Menu-->   
+    <section class="menu">
+        <div class="icon">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="setting_container">
+            <div class="box_seting">
+                <h4>Colors</h4>
+                <ul class="list_links">
+                    <li class="active" data-color="#ffa000"></li>
+                    <li data-color="red"></li>
+                    <li data-color="blue"></li>
+                    <li data-color="violet"></li>
+                    <li data-color="yellowgreen"></li>
+                </ul>
+            </div>
+            <div class="box_seting">
+                <h4>Random Background</h4>
+                <div class="choix">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+            <div class="box_seting">
+                <h4>Random Bullets</h4>
+                <div class="choix toggle_bullet">
+                    <span class="show active" data-display="show">Show</span>
+                    <span class="hide" data-display="hide">Hide</span>
+                </div>
+            </div>
+            <div class="box_seting">
+                <h4>Change Pictures</h4>
+              <div class="box_images">
+                <img src="imgs/01.jpg" alt="">
+                <img src="imgs/02.jpg" alt="">
+                <img src="imgs/03.jpg" alt="">
+                <img src="imgs/04.jpg" alt="">
+                <img src="imgs/05.jpg" alt="">
+              </div>
+            </div>
+            <div class="box_seting">
+                <h4>Change Header</h4>
+                <div class="choix position">
+                    <span class="fixed active" data-background="fixed">Fixed</span>
+                    <span class="relative" data-background="relative">Relative</span>
+                </div>
+            </div>
+            <botton class="reload">Reload Option</botton>
+        </div>
+    </section>
+<!--End Menu-->
+
+<!--Start Landing-->
+    <section class="landing">
+      <div class="container">
+        <div class="head">
+            <div class="logo">Kimo</div>
+            <ul class="links">
+                <li><a href="#" class="active" data-section=".about">About</a></li>
+                <li><a href="#" data-section=".skills">Skills</a></li>
+                <li><a href="#" data-section=".galery">Galery</a></li>
+                <li><a href="#" data-section=".timeline">Timeline</a></li>
+                <li><a href="#" data-section=".features">Features</a></li>
+                <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+            </ul>
+            <div class="toggle_menu">
+                <span></span>
+            </div>
+        </div>
+        <div class="info">
+            <h1>Your <span>Creative</span> Web Site</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim reiciendis recusandae labore ipsa nam eos nemo ullam. Hic laborum fugiat animi exercitationem.
+            </p>
+        </div>
+      </div>
+    </section>
+<!--End Landing-->
+
+<!--Start Bullets-->
+<ul class="bullets">
+    <li class="bullet" title="click">
+        <a href="#about" data-section=".about">About</a>
+    </li>
+    <li class="bullet" title="click">
+        <a href="#Skills" data-section=".skills">Skills</a>
+    </li>
+    <li class="bullet" title="click">
+        <a href="#galery" data-section=".galery">Galery</a>
+    </li>
+    <li class="bullet" title="click">
+        <a href="#timeline" data-section=".timeline">Timeline</a>
+    </li>
+    <li class="bullet" title="click">
+        <a href="#features" data-section=".features">Features</a>
+    </li>
+    <li class="bullet" title="click">
+        <a href="#testimonials" data-section=".testimonials">Testimonials</a>
+    </li>
+</ul>
+<!--End Bullets-->
+
+<!-- Start About-->
+<section class="about">
+    <div class="container">
+        <div class="info">
+            <h4 class="main_title">About Us</h4>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim reiciendis recusandae labore ipsa nam eos nemo
+                ullam. Hic laborum fugiat animi exercitationem
+            </p>
+        </div>
+        <div class="image">
+            <img src="imgs/about_us.jpg" alt="Image Section About">
+        </div>
+    </div>
+</section>
+<!--End About-->
+
+<!--Start Skills-->
+<section class="skills">
+    <h1 class="main_title">Our Skills</h1>
+    <div class="container">
+        <div class="skill_box">
+            <h4 class="skill_info">HTML</h4>
+            <div class="skill_progress">
+                <span data-progress="80%"></span>
+            </div>
+        </div>
+
+        <div class="skill_box">
+            <h4 class="skill_info">CSS</h4>
+            <div class="skill_progress">
+                <span data-progress="70%"></span>
+            </div>
+        </div>
+
+        <div class="skill_box">
+            <h4 class="skill_info">JAVASCRIPT</h4>
+            <div class="skill_progress">
+                <span data-progress="90%"></span>
+            </div>
+        </div>
+
+        <div class="skill_box">
+            <h4 class="skill_info">Python</h4>
+            <div class="skill_progress">
+                <span data-progress="85%"></span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Skills-->
+
+<!-->Start Section galery-->
+<section class="galery">
+    <h1 class="main_title">Your Galery</h1>
+    <div class="container">
+      <div class="box_galery">
+        <img src="imgs/01.jpg" alt="img 01" title="click">
+        <img src="imgs/02.jpg" alt="img 02" title="click">
+        <img src="imgs/03.jpg" alt="img 03" title="click">
+        <img src="imgs/04.jpg" alt="img 04" title="click">
+        <img src="imgs/05.jpg" alt="img 05" title="click">
+        <img src="imgs/01.jpg" alt="img" title="click">
+        <img src="imgs/02.jpg" alt="img" title="click">
+        <img src="imgs/03.jpg" alt="img" title="click">
+      </div>
+    </div>
+</section>
+<!--End Section galery-->
+
+<!--Start Timeline-->
+<section class="timeline">
+   <div class="container">
+    <h1 class="main_title">Timeline</h1>
+        <div class="ts_box">
+            <div class="year">2018</div>
+
+            <div class=" box left">
+                <h3 class="time_title">Test left</h3>
+                <p class="time_text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim reiciendis recusandae labore ipsa nam eos nemo
+                </p>
+            </div>
+            
+<div class="clear_fix"></div>
+
+            <div class=" box right">
+                <h3 class="time_title">Test Right</h3>
+                <p class="time_text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim reiciendis recusandae labore ipsa nam
+                    eos nemo
+                </p>
+            </div>
+
+<div class="clear_fix"></div>
+
+            <div class="year">2015</div>
+            
+            <div class=" box left">
+                <h3 class="time_title">Test left</h3>
+                <p class="time_text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim reiciendis recusandae labore ipsa nam
+                    eos nemo
+                </p>
+            </div>
+
+<div class="clear_fix"></div>
+
+            <div class=" box left">
+                <h3 class="time_title">Test left</h3>
+                <p class="time_text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim reiciendis recusandae labore ipsa nam
+                    eos nemo
+                </p>
+            </div>
+
+<div class="clear_fix"></div>
+
+            <div class=" box right">
+                <h3 class="time_title">Test Right</h3>
+                <p class="time_text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim reiciendis recusandae labore ipsa nam
+                    eos nemo
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End Timeline-->
+
+<!--start features-->
+<section class="features">
+    <h1 class="main_title">Your Features</h1>
+    <div class="container">
+        <div class="feat_box">
+
+            <div class="box">
+                <i class="fa-brands fa-amazon-pay"></i>
+                <h4>development</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-amazon-pay"></i>
+                <h4>Programming</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-amazon-pay"></i>
+                <h4>design</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-amazon-pay"></i>
+                <h4>laravel</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-amazon-pay"></i>
+                <h4>tehnical Supporters</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-amazon-pay"></i>
+                <h4>Ingenier</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+            </div>
+
+        </div>
+    </div>
+<div class="clear_fix"></div>
+</section>
+<!--End Features-->
+
+<!--start Testimonials-->
+<section class="testimonials">
+    <div class="container">
+        <h1>Testimonials</h1>
+        
+        <div class="test_box">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+            <div class="test_info">
+                <img src="https://placehold.co/80x80" alt="">
+                <h4>test</h4>
+                <p>
+                    Company COD
+                </p>
+<div class="clear_fix"></div>
+            </div>
+        </div>
+
+        <div class="test_box">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+            <div class="test_info">
+                <img src="https://placehold.co/80x80" alt="">
+                <h4>test</h4>
+                <p>
+                    Company COD
+                </p>
+<div class="clear_fix"></div>
+            </div>
+        </div>
+
+        <div class="test_box">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+            <div class="test_info">
+                <img src="https://placehold.co/80x80" alt="">
+                <h4>test</h4>
+                <p>
+                    Company COD
+                </p>
+<div class="clear_fix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear_fix"></div>
+</section>
+<!--End testimonials-->
+
+<!--Start Contact-->
+<section class="contact">
+    <div class="container">
+        <h1 class="main_title">Contact</h1>
+      <form>
+        <div class="left">
+            <input type="text" placeholder="You Name">
+            <input type="number" placeholder="You Number">
+            <input type="email" placeholder="You Email">
+            <input type="text" placeholder="You Subject">
+        </div>
+        <div class="right">
+            <textarea placeholder="Your Msg"></textarea>
+            <input type="submit" value="Send">
+        </div>
+        <div class="clear_fix"></div>
+    </form>
+    </div>
+</section>
+<!--End Contact-->
+
+<!--Start Footer-->
+<footer>
+     Create With &copy;Kimo 2022
+</footer>
+<!--End Footer-->
+
+    <script src="js/master.js"></script>
+</body>
+</html>
+
+
+
